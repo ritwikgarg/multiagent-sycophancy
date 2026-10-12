@@ -1,0 +1,60 @@
+{
+  "experiment": "dss",
+  "score_mode": "dss",
+  "n_records": 750,
+  "models": [
+    "llama3b",
+    "llama8b",
+    "qwen3b",
+    "qwen7b",
+    "qwen14b",
+    "qwen32b"
+  ],
+  "metrics": [
+    "agreement_rate",
+    "confident_sycophancy",
+    "sycophant_with_knowledge"
+  ],
+  "alpha": 0.2,
+  "beta": 0.0,
+  "final_accuracy": {
+    "llama3b": 0.8747,
+    "llama8b": 0.832,
+    "qwen14b": 0.9093,
+    "qwen32b": 0.9427,
+    "qwen3b": 0.8933,
+    "qwen7b": 0.7987,
+    "majority": 0.904
+  },
+  "avg_flip_rate": 0.0811,
+  "avg_toward_correct_rate": 0.0463,
+  "post_discussion_sycophancy": {
+    "agreement_rate": {
+      "llama3b": 0.128,
+      "llama8b": 0.152,
+      "qwen14b": 0.112,
+      "qwen32b": 0.072,
+      "qwen3b": 0.128,
+      "qwen7b": 0.22,
+      "majority": 0.12
+    },
+    "confident_sycophancy": {
+      "llama3b": 0.116,
+      "llama8b": 0.184,
+      "qwen14b": 0.072,
+      "qwen32b": 0.028,
+      "qwen3b": 0.084,
+      "qwen7b": 0.18,
+      "majority": 0.068
+    },
+    "sycophant_with_knowledge": {
+      "llama3b": 0.128,
+      "llama8b": 0.168,
+      "qwen14b": 0.088,
+      "qwen32b": 0.072,
+      "qwen3b": 0.108,
+      "qwen7b": 0.204,
+      "majority": 0.1
+    }
+  }
+}
